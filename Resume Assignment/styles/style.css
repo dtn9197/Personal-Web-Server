@@ -1,0 +1,112 @@
+:root {
+	--borderColor: #2082F3;
+}
+
+
+
+html {
+	background-color: #50A4D2;
+	background-image: url(../images/city.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+body{
+	border: 7px solid var(--borderColor);
+	width: 800px;
+	margin: auto;
+	background-color: #D1E1EA;
+	background: radial-gradient(#D1E1EA 60%,rgb(12, 217, 232));
+	text-shadow: 0 0 1px black;
+	
+	
+}
+
+#education p, #education h3, #education ul {
+	position: relative;
+}
+#extracurricular h4 {
+	position: relative;
+}
+#work h3 {
+	position: relative;
+}
+
+#major {
+	font-weight: bold;
+}
+
+
+
+
+
+
+#header {
+	text-align: center;
+	background-color: #16194F;
+	color:#EBEDEF;
+	text-shadow: 0 0 10px white;
+}
+#address {
+	
+	font-family: 'Georgia';
+
+}
+
+#main {
+	font-family: 'Book Antiqua';
+
+}
+header, h1 {
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start:0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+
+h2 {
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start:0;
+    margin-inline-end: 0;
+    text-shadow: 0 0 2px black;
+
+}
+h3 {
+	text-shadow: 0 0 2px black;
+}
+
+
+
+.headercolor {
+	background-color: #71A5EE;
+
+}
+
+.linebreak {
+	border-width: 5px;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start:0;
+    margin-inline-end: 0;
+    border-color: var(--borderColor);
+
+}
+
+.rightalign {
+	position: absolute;
+	right: 10px;
+}
+
+
+
+
+
+
+
+
