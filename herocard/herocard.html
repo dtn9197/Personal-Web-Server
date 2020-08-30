@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    #description {
+      width: 500px;
+      background-color: white;
+    }
+    #description p {
+      font-size: 1.2rem;
+    }
+
+    #description img {
+      width: 100%;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-row-gap: 25px;
+    }
+
+    body {
+      background-color: rgba(124, 124, 124,1);
+    }
+
+
+    #Batman {
+      --hero-card-header-image: url("assets/background2.jpg");
+      
+      --hero-card-description-border: rgb(87, 109, 208);
+      --hero-card-border: rgb(29, 37, 77);
+
+      --hero-card-name-color: rgb(67, 114, 224);
+      --hero-card-description-header-color: rgb(67, 114, 224);
+      --hero-card-powers-headers-color: rgb(67, 114, 224);
+      --hero-card-herotype-color: rgb(67, 114, 224);
+    }
+
+    #Ironman {
+      --hero-card-header-image: url("assets/ironmanheader.jpg");
+      --hero-card-description-border: rgb(243, 182, 0 );
+      --hero-card-description-header-color: rgb(243, 240, 0 );
+      --hero-card-name-color: rgb(243, 240, 0  );
+      --hero-card-herotype-color: rgb(243, 240, 0 );
+      --hero-card-powers-headers-color: rgb(243, 240, 0 );
+    }
+
+
+    
+
+    #Atrocitus {
+      --hero-card-name-color: rgb(243, 0, 0 );
+      --hero-card-name-shadow: 2px 2px 10px red;
+
+      --hero-card-herotype-color: rgb(243, 0, 0 );
+      --hero-card-herotype-shadow: 2px 2px 10px red,
+      2px 2px 10px red;
+
+      --hero-card-description-border: rgb(115, 24, 24 );
+      
+
+
+      --hero-card-description-header-color: rgb(243, 0, 0 );
+      --hero-card-description-header-shadow: 2px 2px 15px red,
+      2px 2px 15px red
+      ;
+
+      --hero-card-powers-headers-color: rgb(243, 0, 0 );
+      --powersheadershadow-style: 2px 2px 15px red, 
+      2px 2px 15px red;
+      
+
+      
+      --hero-card-header-image: url("assets/atrocitusheader.jpg") ;
+
+      --hero-card-border: rgb(243, 0, 0 );
+      --hero-card-border: rgb(186, 76, 76 );
+    }
+
+    #Thanos {
+      --hero-card-name-color: rgb(243, 0, 0 );
+      --hero-card-name-shadow: 5px 5px 15px rgb(243, 0, 0 ),
+      5px 5px 15px rgb(243, 0, 0 )
+      ;
+
+      --hero-card-herotype-color: rgb(18, 0, 242);
+      --hero-card-herotype-shadow: 5px 5px 15px rgb(18, 0, 242),
+      5px 5px 15px rgb(18, 0, 242),
+      5px 5px 15px rgb(18, 0, 242);
+
+
+      --hero-card-description-header-color: rgb(33, 242, 0 );
+      --hero-card-description-header-shadow: 5px 5px 15px rgb(33, 242, 0 ),
+      5px 5px 15px rgb(33, 242, 0 ),
+      5px 5px 15px rgb(33, 242, 0 ),
+      5px 5px 15px rgb(33, 242, 0 )
+      ;
+
+      --hero-card-powers-headers-color: rgb(255, 162, 0 );
+      --powersheadershadow-style: 5px 5px 15px rgb(255, 162, 0 ),
+      5px 5px 15px rgb(255, 162, 0 );
+      --hero-card-header-image: url("assets/thanosheader.png") ;
+      --hero-card-description-background-color: rgb(42, 30, 70);
+
+      --hero-card-border: rgb(255, 243, 0 );
+      --hero-card-text-color: rgb(255, 140, 194 );
+      --hero-card-text-shadow: 5px 5px 15px rgb(255, 140, 194 );
+
+    }
+
+    #Superman{
+      --hero-card-header-image: url("assets/supermanheader.png");
+    }
+    
+
+    
+  </style>
+  
+  <script type="module" src="./herocard.js"></script>
+</head>
+
+<body>
+  <div id="demo"></div>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <hero-card id="Batman" name="Batman" powers="Master Spy, Genius-Level Intellect, Master Martial Artist, Peak Human Conditioning, Expert Acrobat, Intimidation" universe="dc" type="Hero" >
+        <img slot="heroimage" src="assets/batman.jpg" alt="">
+        <p slot="description">Lorems ipsum dolor sit amet consectetur adipisicing elit. Nihil qui molestias ipsam optio neque, quo illum sapiente repellendus earum laudantium, vitae officia sequi animi distinctio minus a, excepturi inventore vel explicabo reiciendis aperiam error. Officiis sunt soluta, inventore non dolor asperiores odit, voluptates excepturi est, nostrum ratione. Quasi, itaque optio!</p>
+      </hero-card>
+    </div>
+    <div class="grid-item">
+      <hero-card  id="Ironman" name="Ironman" powers="Master Engineer, Super-Genius Intellect, Expert Tactician, Skilled Combatant " universe="marvel" type="Hero" >
+        <p slot="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui molestias ipsam optio neque, quo illum sapiente repellendus earum laudantium, vitae officia sequi animi distinctio minus a, excepturi inventore vel explicabo reiciendis aperiam error. Officiis sunt soluta, inventore non dolor asperiores odit, voluptates excepturi est, nostrum ratione. Quasi, itaque optio!</p>
+        
+        <img slot="heroimage" src="assets/ironman.jpg" alt="">
+        <span id="powers">power1, power2, power3</span>
+        
+      </hero-card>
+    </div>
+    
+    <div class="grid-item">
+      <hero-card id="Atrocitus"name="Atrocitus" powers="Boundless Rage, Blood Magic, Power Ring, Flight, Super Strength" universe="dc"type="Villain" >
+        <p slot="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui molestias ipsam optio neque, quo illum sapiente repellendus earum laudantium, vitae officia sequi animi distinctio minus a, excepturi inventore vel explicabo reiciendis aperiam error. Officiis sunt soluta, inventore non dolor asperiores odit, voluptates excepturi est, nostrum ratione. Quasi, itaque optio!</p>
+        <img slot="heroimage" src="assets/atrocitus.jpg" alt="">
+      </hero-card>
+    </div>
+    <div class="grid-item">
+      <hero-card id="Thanos"name="Thanos" powers="Infinity Gauntlet, Super Strength, Energy Absorption, Space Manipulation, Reality Manipulation" universe="marvel"type="Villain" >
+        <p slot="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui molestias ipsam optio neque, quo illum sapiente repellendus earum laudantium, vitae officia sequi animi distinctio minus a, excepturi inventore vel explicabo reiciendis aperiam error. Officiis sunt soluta, inventore non dolor asperiores odit, voluptates excepturi est, nostrum ratione. Quasi, itaque optio!</p>
+        <img slot="heroimage"src="assets/thanos.jpg" alt="">
+      </hero-card>
+    </div>
+    <div class="grid-item">
+      <hero-card id="Superman"name="Superman" powers="Flight, Super Strength, Laser, Frost Breath" universe="dc" type="hero" >
+        <p slot="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui molestias ipsam optio neque, quo illum sapiente repellendus earum laudantium, vitae officia sequi animi distinctio minus a, excepturi inventore vel explicabo reiciendis aperiam error. Officiis sunt soluta, inventore non dolor asperiores odit, voluptates excepturi est, nostrum ratione. Quasi, itaque optio!</p>
+        <img slot="heroimage" src="assets/superman.jpg" alt="">
+      </hero-card>
+
+    </div>
+    
+  </div>
+  <div id="description">
+    <h2>What is this???</h2>
+    <p>These are all web components!!!! They are custom made HTML5 markup that can be created and re-used on the web. The source code for these can be written once then imported into a project. This greatly improves productivity for developers if you encounter the same use cases over and over.
+    </p>
+    <h2>Use Case</h2>
+    <p>There are many web design patterns that use the same ideas for certain things. Card design is a popular one use to list people. One example would be an organization chart of a company. This example here is the org chart from Walmart. With web components, you can write your code once and re-use them as many times as needed. #productivity
+     
+    </p>
+    <img src="./assets/usecase.png" alt="">
+    
+  </div>
+  
+  
+
+  
+
+</body>
+</html>

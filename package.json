@@ -1,0 +1,29 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "A personal porfolio web site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "es-dev-server --app-index index.html --node-resolve --open --watch"
+  },
+  "dependencies": {
+    "@lrnwebcomponents/simple-colors": "^2.6.10",
+    "@lrnwebcomponents/simple-colors-shared-styles": "^2.6.8",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtn9197/Personal-Web-Server.git"
+  },
+  "author": "Duy Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtn9197/Personal-Web-Server/issues"
+  },
+  "homepage": "https://github.com/dtn9197/Personal-Web-Server#readme"
+}
