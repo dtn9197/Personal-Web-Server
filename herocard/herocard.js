@@ -12,9 +12,9 @@
  * http://polymer.github.io/PATENTS.txt
  */
 
-import {LitElement, html, css} from '../node_modules/lit-element';
+import {LitElement, html, css} from 'lit-element';
 
-import { SimpleColors } from '../node_modules/@lrnwebcomponents/simple-colors/simple-colors';
+import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors';
 
 
 export class HeroCard extends SimpleColors {
