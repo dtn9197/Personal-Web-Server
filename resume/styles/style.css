@@ -6,6 +6,11 @@
 	display: flex;
 	justify-content: space-between;
 }
+#dean-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 20px;
+}
 
 body {
 	background-color: #50A4D2;
