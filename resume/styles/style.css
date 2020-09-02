@@ -2,7 +2,10 @@
 	--borderColor: #2082F3;
 }
 
-
+#header-container {
+	display: flex;
+	justify-content: space-between;
+}
 
 body {
 	background-color: #50A4D2;
