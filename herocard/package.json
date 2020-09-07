@@ -1,0 +1,23 @@
+{
+  "name": "hero-card",
+  "version": "0.0.0",
+  "description": "Webcomponent hero-card following open-wc recommendations",
+  "author": "hero-card",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch"
+  },
+  "dependencies": {
+    "@lrnwebcomponents/simple-colors": "^2.6.10",
+    "@lrnwebcomponents/simple-colors-shared-styles": "^2.6.8",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.23.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
