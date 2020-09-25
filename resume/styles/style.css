@@ -106,6 +106,7 @@ h3 {
 .rightalign {
 	position: absolute;
 	right: 10px;
+	font-weight: normal;
 }
 
 
