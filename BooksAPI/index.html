@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books API</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <main>
+        <h1>Best Sellers Book API</h1>
+        <h2>Overview</h2>
+        <p>The purpose of this project is to display books that have been in the New York Times's bestseller lists in the past. It uses two API sources: <strong>1) The
+            New York Times Book API</strong> and the <strong>Open Library API</strong>. The New York Times API is used to retrieve a list of books based on 3 filters. User can query books
+            based on <strong>author</strong>, <strong>age group</strong>, and <strong>publisher</strong>. Users have the option to query using these filters individually, together, or none at all. Once the books data is retrieved, the isbn10 numbers of each book will be used to get their respective images from Open Library API. The results will then be displayed in an HTML table. For the sake of brevity, only 10 records will be displayed, even if the query has a lot of results.
+        </p><br>
+
+        <h3>**Notes</h3>
+        <p>not every combination of filters will guarantee to return results. Here are some query combinations that will return decent results:
+            <table>
+                <tr>
+                    <th>Query</th>
+                    <th>Author</th>
+                    <th>Age Group</th>
+                    <th>Publisher</th>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td></td>
+                    <td>5-8</td>
+                    <td>HarperCollins</td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td>Stephen King</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td></td>
+                    <td>12 and up</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>#4</td>
+                    <td></td>
+                    <td></td>
+                    <td>Penguin Random House</td>
+                </tr>
+            </table>
+        </p>
+
+        <img id="testImage" src="" alt="">
+        <div id="selectionBox">
+            <div><h3>Author: </h3><input id="author" type="text"></div>
+            <div>
+                <h3>Age Group</h3>
+                <select name="" id="age-group">
+                    <option value="">none</option>
+                    <option value="4">3 to 5</option>
+                    <option value="6">5 to 8</option>
+                    <option value="9">8 to 12</option>
+                    <option value="15">12 and up</option>
+                </select>
+            </div>
+            <div>
+                <h3>Publishers</h3>
+                <input class ="radio" id="penguin" type="radio" name="publisher" value="penguin"><label for="penguin">Penguin Random House</label><br>
+                <input class ="radio" id ="hachette" type="radio" name="publisher" value="hachette"><label for="hachette">Hachette Livre</label><br>
+                <input class ="radio" id ="harpercollins" type="radio" name="publisher" value="harpercollins"><label for="harpercollins">Harper Collins</label><br>
+                <input class ="radio" id ="macmillian" type="radio" name="publisher" value="macmillian"><label for="macmillian">Macmillian Publishers</label><br>
+                <input class ="radio" id ="simon & schuster" type="radio" name="publisher" value="simon %26 schuster"><label for="simon & schuster">Simon & Schuster</label><br>
+                <input class ="radio" id ="none" type="radio" name="publisher" value=""><label for="simon & schuster">none</label><br>
+            
+
+            </div>
+        </div>
+        <button onclick="getBooks()">Search</button>
+      
+        <table id="booksTable">
+           <tr id="tableHeader">
+               <th>Title</th>
+               <th>Author</th>
+               <th>Cover</th>
+               <th>ISBN10</th>
+               <th>Description</th>
+               <th>Publisher</th>
+               <th>Age Group</th>
+           </tr>
+        </table>
+    
+       
+    
+
+    </main>
+
+   
+
+    
+    
+</body>
+</html>
